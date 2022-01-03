@@ -1,6 +1,8 @@
 package com.example.shop4good.entity;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,7 +17,8 @@ import java.util.Date;
 
 @Entity
 @Table(name="product")
-@Data
+@Getter
+@Setter
 public class Product {
 
     @Id

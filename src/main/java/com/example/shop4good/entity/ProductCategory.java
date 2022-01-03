@@ -1,6 +1,8 @@
 package com.example.shop4good.entity;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -14,7 +16,8 @@ import java.util.Set;
 
 @Entity
 @Table(name = "product_category")
-@Data
+@Getter
+@Setter
 public class ProductCategory {
 
     @Id
